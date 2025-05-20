@@ -37,6 +37,12 @@
 		<!-- Oracle Database -->
 		<oracle.version>23.8.0.25.04</oracle.version>
 
+		<!-- Guava -->
+		<guava.version>33.4.8-jre</guava.version>
+	
+		<!-- Jaxb -->
+		<jaxb.version>2.3.1</jaxb.version>
+
 		<!-- Logging -->
 		<logback.version>1.2.3</logback.version>
 		<slf4j.version>1.7.25</slf4j.version>
@@ -47,7 +53,7 @@
 	</properties>
 
 	<dependencies>
-		
+
 
 		<!-- Spring MVC -->
 		<dependency>
@@ -146,6 +152,25 @@
 			<groupId>com.oracle.database.jdbc</groupId>
 			<artifactId>ojdbc11</artifactId>
 			<version>${oracle.version}</version>
+		</dependency>
+
+		<!-- guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava.version}</version>
+		</dependency>
+
+		<!-- jaxb -->
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>${jaxb.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jaxb</groupId>
+			<artifactId>jaxb-runtime</artifactId>
+			<version>${jaxb.version}</version>
 		</dependency>
 
 		<!-- Test Artifacts -->

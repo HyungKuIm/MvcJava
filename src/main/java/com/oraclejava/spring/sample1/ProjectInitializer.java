@@ -7,7 +7,7 @@ public class ProjectInitializer extends AbstractAnnotationConfigDispatcherServle
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		// TODO Auto-generated method stub
-		return null;
+		return new Class[] { DataServiceConfig.class };
 	}
 
 	@Override
